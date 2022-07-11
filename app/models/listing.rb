@@ -5,13 +5,9 @@ class Listing < ApplicationRecord
 
 
   enum location: {
-    NSW: 1,
-    QLD: 2,
-    TAS: 3,
-    VIC: 4,
-    WA: 5,
-    SA: 6,
-    NT: 7,
-    ACT: 8
+    QLD: 1,
+    NSW: 2,
+    ACT: 3,
+    VIC: 4
   }
 end

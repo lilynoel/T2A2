@@ -12,5 +12,13 @@ if Category.count == 0
     categories.each do |category|
         Category.create(name:category)
         puts "created #{category} category"
-    end
+    end 
+
+#     categories = ["Puppy", "1 - 7 Years", "7 + Years"]
+
+# if Category.count == 0
+#     categories.each do |category|
+#         Category.create(name:category)
+#         puts "created #{category} category"
+#     end 
 end
