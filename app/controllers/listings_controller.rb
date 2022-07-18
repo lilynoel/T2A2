@@ -1,6 +1,8 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: %i[ show edit update destroy ]
   before_action :set_form_vars, only: %i[ new edit ]
+  # before_action :authenticate_user!, except: [:idex, :show]
+  # before_action :authorize_user, only: [:edit, :update, :destroy]
 
 
   # GET /listings or /listings.json
@@ -24,6 +26,7 @@ class ListingsController < ApplicationController
   # POST /listings or /listings.json
   def create
     @listing = Listing.new(listing_params)
+    @listing.user = current_user
 
     respond_to do |format|
       if @listing.save
