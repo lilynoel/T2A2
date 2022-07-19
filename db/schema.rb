@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_18_031459) do
+ActiveRecord::Schema.define(version: 2022_07_19_044714) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 2022_07_18_031459) do
   end
 
   create_table "listings", force: :cascade do |t|
+    t.string "title"
     t.string "breed"
     t.string "location"
     t.integer "fee"
@@ -71,6 +72,17 @@ ActiveRecord::Schema.define(version: 2022_07_18_031459) do
     t.string "name"
     t.index ["category_id"], name: "index_listings_on_category_id"
     t.index ["user_id"], name: "index_listings_on_user_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.bigint "listing_id", null: false
+    t.bigint "buyer_id", null: false
+    t.bigint "seller_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["buyer_id"], name: "index_orders_on_buyer_id"
+    t.index ["listing_id"], name: "index_orders_on_listing_id"
+    t.index ["seller_id"], name: "index_orders_on_seller_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -90,4 +102,7 @@ ActiveRecord::Schema.define(version: 2022_07_18_031459) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "listings", "categories"
   add_foreign_key "listings", "users"
+  add_foreign_key "orders", "listings"
+  add_foreign_key "orders", "users", column: "buyer_id"
+  add_foreign_key "orders", "users", column: "seller_id"
 end
