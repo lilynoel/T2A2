@@ -1,8 +1,8 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: %i[ show edit update destroy ]
   before_action :set_form_vars, only: %i[ new edit ]
-  # before_action :authenticate_user!, except: [:idex, :show]
-  # before_action :authorize_user, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authorize_user, only: [:edit, :update, :destroy]
 
 
   # GET /listings or /listings.json
@@ -73,9 +73,16 @@ class ListingsController < ApplicationController
       @locations = Listing.locations.keys
     end
 
+
+  def authorize_user
+      if @listing.user_id != current_user.id
+        flash[:alert] = "You can't do that!"
+        redirect_to listings_path
+      end
+  end
+
     # Only allow a list of trusted parameters through.
     def listing_params
-      # params.require(:listing).permit(:name, :description, :breed, :location, :fee, :available, :user_id, :category_id)
-      params.require(:listing).permit(:name, :description, :breed, :location, :fee, :available, :user_id, :category_id)
+      params.require(:listing).permit(:name, :description, :breed, :location, :fee, :available, :user_id, :category_id, :picture)
     end
 end
