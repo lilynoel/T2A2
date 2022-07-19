@@ -8,6 +8,8 @@
 <% end %>
 </div>
 
+<%= button_to "Adopt me!", place_order_path %>
+
 <p>
   <strong>Name:</strong>
   <%= @listing.name %>
@@ -29,7 +31,7 @@
 </p>
 
 <p>
-  <strong>Fee:</strong>
+  <strong>Fee: $</strong>
   <%= @listing.fee %>
 </p>
 
@@ -48,6 +50,6 @@
   <%= @listing.category_id %>
 </p>
 <% if current_user && current_user.id == @listing.user_id %>
-  <%= link_to 'Edit', edit_listing_path(@listing) %>
+  <%= link_to 'Edit', edit_listing_path(@listing), class: "button button-primary" %>
 <% end %>
-<%= link_to 'Back', listings_path %>
+<%= link_to 'Back', listings_path, class: "button button-primary" %>
