@@ -1,12 +1,12 @@
 
-<%= link_to "🏠", root_path %> | 
-<%= link_to "Listings", listings_path %>
+<%= link_to "🏠", root_path, class: "button" %> 
+<%= link_to "Listings", listings_path, class: "button" %>
 
 <span style="float: right">
 <% if user_signed_in? %>
-<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+<%= link_to "Log out", destroy_user_session_path, method: :delete, class: "button button-primary" %>
 <% else %>
-<%= link_to "Register", new_user_registration_path %> | 
-<%= link_to "Log in", new_user_session_path %>
+<%= link_to "Register", new_user_registration_path, class: "button button-primary" %>
+<%= link_to "Log in", new_user_session_path, class: "button button-primary" %>
 <% end %>
 </span>
