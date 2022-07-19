@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2022_07_18_031459) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
+    # t.text "title"
     t.string "record_type", null: false
     t.bigint "record_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -27,6 +28,7 @@ ActiveRecord::Schema.define(version: 2022_07_18_031459) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
+    # t.string "title", null: false
     t.string "record_type", null: false
     t.bigint "record_id", null: false
     t.bigint "blob_id", null: false
@@ -54,13 +56,14 @@ ActiveRecord::Schema.define(version: 2022_07_18_031459) do
   end
 
   create_table "categories", force: :cascade do |t|
+    # t.string "title"
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "listings", force: :cascade do |t|
-    t.string "title"
+    # t.string "title"
     t.string "breed"
     t.string "location"
     t.integer "fee"
