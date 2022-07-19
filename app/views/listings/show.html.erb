@@ -8,7 +8,30 @@
 <% end %>
 </div>
 
-<%= button_to "Adopt me!", place_order_path %>
+
+
+
+<% if !@listing.available %>
+  <h3> I've been Adopted! ❤️</h3>
+<% elsif current_user && current_user.id == @listing.user_id %>
+  <h3> You are viewing your listing!</h3> 
+<% elsif current_user %>
+  <%= button_to "Adopt me!", place_order_path %>
+<% else %>
+  <h3> Please log in to adopt a fur-friend </h3>
+
+
+
+<%# <% if current_user && @listing.available %> %>
+  <%# <%= button_to "Adopt me!", place_order_path %> %>
+<%# <% else %> %>
+  <%# <p> I've been Adopted! ♥️ </p> %>
+<%# <% elsif current_user && current_user.id == @listing.user_id %> %>
+  <%# <p> You are viewing your listing" </p> %>
+
+
+
+<% end %>
 
 <p>
   <strong>Name:</strong>
