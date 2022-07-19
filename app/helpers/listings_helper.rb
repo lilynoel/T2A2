@@ -1,7 +1,7 @@
 module ListingsHelper
-    # def format_location(location)
-    #     words = location.map do |word|
-    #         word.lowercase
+    # def format_category(category)
+    #     words = category.map do |word|
+    #         word.capitalize
     #     end
     # end
 end

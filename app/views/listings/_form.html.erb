@@ -38,7 +38,7 @@
     <%= form.number_field :fee %>
   </div>
 
- <!-- > <div class="field">
+<!--  <div class="field">
     <%= form.label :available %>
     <%= form.check_box :available %>
   </div>
@@ -48,10 +48,10 @@
     <%= form.text_field :user_id %>
   </div>
 
--->
+  -->
 
   <div class="field">
-    <%= form.label :category_id %>
+    <%= form.label :category_id, %>
     <%= form.select :category_id, @categories.map {|c| [c.name, c.id]} %>
   </div>
 
