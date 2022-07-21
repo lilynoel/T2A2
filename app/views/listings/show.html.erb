@@ -16,7 +16,7 @@
 <% elsif current_user && current_user.id == @listing.user_id %>
   <h3> You are viewing your listing!</h3> 
 <% elsif current_user %>
-  <%= button_to "Adopt me!", place_order_path %>
+  <%= button_to "Adopt me!", place_order_path, class: "button button-primary"%>
 <% else %>
   <h3> Please log in to adopt a fur-friend </h3>
 
