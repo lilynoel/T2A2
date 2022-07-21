@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(version: 2022_07_19_044714) do
   end
 
   create_table "listings", force: :cascade do |t|
-    t.string "title"
+    t.string "name"
     t.string "breed"
     t.string "location"
     t.integer "fee"
