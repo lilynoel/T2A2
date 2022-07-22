@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listings</h1>
@@ -8,7 +9,7 @@
       <th>Name</th>
       <th>Description</th>
       <th>Breed</th>
-      <th>Location</th>
+      <%# <th>Location</th> %>
       <th>Fee</th>
       <th>Available</th>
       <th>User</th>
@@ -23,7 +24,7 @@
         <td><%= listing.name %></td>
         <td><%= listing.description %></td>
         <td><%= listing.breed %></td>
-        <td><%= listing.location %></td>
+        <%# <td><%= listing.location %>
         <td><%= listing.fee %></td>
         <td><%= listing.available %></td>
         <td><%= listing.user_id %></td>
@@ -39,5 +40,4 @@
 </table>
 
 <br>
-
 <%= link_to 'Post A New Listing', new_listing_path, class: "button button-primary" %>

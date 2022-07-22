@@ -1,13 +1,15 @@
+<span>
 <p id="notice"><%= notice %></p>
 
+
+
 <div>
-<% if @listing.picture.attached? %>
+ <% if @listing.picture.attached? %>
   <%= image_tag @listing.picture, alt: @listing.name %>
 <% else %>
   <%= image_tag "https://placedog.net/400/500?r", alt: @listing.name %>
 <% end %>
 </div>
-
 
 
 
@@ -19,18 +21,6 @@
   <%= button_to "Adopt me!", place_order_path, class: "button button-primary"%>
 <% else %>
   <h3> Please log in to adopt a fur-friend </h3>
-
-
-
-<%# <% if current_user && @listing.available %> %>
-  <%# <%= button_to "Adopt me!", place_order_path %> %>
-<%# <% else %> %>
-  <%# <p> I've been Adopted! ♥️ </p> %>
-<%# <% elsif current_user && current_user.id == @listing.user_id %> %>
-  <%# <p> You are viewing your listing" </p> %>
-
-
-
 <% end %>
 
 <p>
@@ -48,13 +38,13 @@
   <%= @listing.breed %>
 </p>
 
-<p>
+<%# 
   <strong>Location:</strong>
   <%= @listing.location %>
-</p>
+
 
 <p>
-  <strong>Fee: $</strong>
+  <strong>Fee:</strong>
   <%= @listing.fee %>
 </p>
 
@@ -76,3 +66,4 @@
   <%= link_to 'Edit', edit_listing_path(@listing), class: "button button-primary" %>
 <% end %>
 <%= link_to 'Back', listings_path, class: "button button-primary" %>
+</span>
