@@ -9,7 +9,7 @@
 <%= link_to "All Listings", listings_path, class: "button" %>
 <% if user_signed_in? %>
 <%= link_to "Your Adoptions", orders_bought_path, class: "button" %> 
-<%= link_to "Your Listings", orders_sold_path, class: "button" %> 
+<%= link_to "Your Adopted Listings", orders_sold_path, class: "button" %> 
 <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "button button-primary" %>
 <% else %>
 <%= link_to "Register", new_user_registration_path, class: "button button-primary" %>
