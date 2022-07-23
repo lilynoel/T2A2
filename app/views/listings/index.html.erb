@@ -1,6 +1,7 @@
 
 <p id="notice"><%= notice %></p>
 
+
 <h1>Listings</h1>
 
 <table>
@@ -9,7 +10,6 @@
       <th>Name</th>
       <th>Description</th>
       <th>Breed</th>
-      <%# <th>Location</th> %>
       <th>Fee</th>
       <th>Available</th>
       <th>User</th>
@@ -25,10 +25,10 @@
         <td><%= listing.description %></td>
         <td><%= listing.breed %></td>
         <%# <td><%= listing.location %>
-        <td><%= listing.fee %></td>
+        <td><%= number_to_currency(listing.fee) %></td>
         <td><%= listing.available %></td>
         <td><%= listing.user_id %></td>
-        <td><%= listing.category_id %></td>
+        <td><%= listing.category.name %></td>
         <td><%= link_to 'View', listing, class: "button"%></td>
         <% if current_user && current_user.id == listing.user_id %>
           <td><%= link_to 'Edit', edit_listing_path(listing), class: "button" %></td>
