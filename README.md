@@ -295,7 +295,7 @@ As tasks were completed, they were moved to different cards on the board for exa
 
 <h5 align="center">
 
-<img src="https://i.ibb.co/YWyxpxh/8179-D523-D29-D-4769-852-B-FB9426-AEFCF7.png" width="125" title="copyright">
+<img src="https://static.wixstatic.com/media/88104f_a5f693795b334dc8a7e421a385d8a140~mv2.png" width="125" title="copyright">
 
 Floof. © 2022 Lily Noël.
 
