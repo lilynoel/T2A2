@@ -46,7 +46,9 @@ Floof is an adoption app specific to canines that is geared towards those who ar
 <br>
 
 - Sitemap
-![screenshots](app/assets/images/2.PNG)
+
+![screenshots](app/assets/images/sitemap.PNG)
+
 <br>
 
 - Screenshots
@@ -95,14 +97,13 @@ In the context of the Floof application, buyers will be referred to as adopters,
 ## Wireframes 
 
 
-![screenshots](app/assets/images/3.PNG)
-![screenshots](app/assets/images/4.PNG)
-![screenshots](app/assets/images/5.PNG)
+![screenshots](app/assets/images/wireone.PNG)
+![screenshots](app/assets/images/wiretwo.PNG)
+![screenshots](app/assets/images/wirethree.PNG)
 
 ## ERD
 
-
-![screenshots](app/assets/images/1.PNG)
+![screenshots](app/assets/images/erd.PNG)
 
 ## Explain the different high-level components (abstractions) in your app
 
