@@ -20,7 +20,7 @@ Floof is an adoption app specific to canines that is geared towards those who ar
  - <u><b>What is the problem and why does it need solving?</u> | </b>  There are so many dogs out there in need of love, shelter, food, warmth - home. On the same note, there are also many humans out there looking for a forever pal. Floof serves to address this issue.
 
 ## Description of your marketplace app (website), including:
-#
+
 - <b><u>Purpose</u> |</b> The primary purpose of this application, is to bridge the gap between dogs who need a home, and humans who need a dog in their life. Adoption is an ethical, compassionate solution to this problem. Getting pups off the street, and allowing humans to experience the unconditional love of a dog. Floof is a mutually beneficial two sided marketplace application created with this problem in mind. 
 <br>
 
@@ -71,7 +71,7 @@ Floof is an adoption app specific to canines that is geared towards those who ar
 <br>
 
 ## User stories
-#
+
 In the context of the Floof application, buyers will be referred to as adopters, and sellers will be known as listing author. The term users may be used to refer to either of the two. 
 
  - <u><i>Guest / visitor</u>:</i>
@@ -93,19 +93,19 @@ In the context of the Floof application, buyers will be referred to as adopters,
 
 
 ## Wireframes 
-#
+
 
 ![screenshots](app/assets/images/3.PNG)
 ![screenshots](app/assets/images/4.PNG)
 ![screenshots](app/assets/images/5.PNG)
 
 ## ERD
-#
+
 
 ![screenshots](app/assets/images/1.PNG)
 
 ## Explain the different high-level components (abstractions) in your app
-#
+
 - <b><u>Forms</u> |</b> Forms are used in a number of places on the website mainly for signing up and to sign in,  Although you do not need this component to brows the sites listings you do need it to make a new listing. Forms are styled in a similar way to the tables component.
 
 - <b><u>Tables</u> |</b>  Tables display the listing information throughout the website on the listings, your adoptions, and your adopted listing pages. This is an effective way of formatting information because it is clear and to the point.
@@ -114,8 +114,9 @@ In the context of the Floof application, buyers will be referred to as adopters,
 <br>
 
 ## Detail any third party services that your app will use
-#
+
 - <u>Github</u>:
+
     I used GitHub to manage source control for this application.
     <br>
 
@@ -127,13 +128,11 @@ In the context of the Floof application, buyers will be referred to as adopters,
 - <u>PostGresQL</u>:
     
     Database.
-
     <br>
 
 - <u>Rspec</u>:
     
     Testing.
-
     <br>
 
 - <u>Devise</u>:
@@ -146,7 +145,7 @@ In the context of the Floof application, buyers will be referred to as adopters,
     <br>
 
 ## Describe your projects models in terms of the relationships (active record associations) they have with each other
-#
+
 This application uses the following models: <i>users, buyers, categories, listings.</i> The users model is made up of a person's email, username and passwords. The users model is connected to buyer_id and seller_id by the zero or many relation.
 
 - <b><u>Users model</u> |</b>  The users model is referenced with its user_id by the Adoption and listings models for both buyer and sellers. A user can have many listings, sold orders and bought orders. On the ERD diagram it is shown as has _many specifies to one to many association. 
@@ -162,7 +161,7 @@ This application uses the following models: <i>users, buyers, categories, listin
 <br>
 
 ## Discuss the database relations to be implemented in your application
-#
+
 <b><u>Users</u> |</b> Users can create no or many listings and an optional to many relationship with the listings and adoption tables.
 
 <b><u>Listings</u> |</b> The Listing table displays two foreign keys, user_id and category_id. When a user creates a listing it belongs only to that user because listings have a one to one relationship with users. Listings have an optional to one relationship with categories and the adoption tables.
@@ -176,7 +175,7 @@ A<b><u>Adoption</u> |</b> This table is shown to have a one to one relationship 
 <b><u>Active storage blobs</u> |</b>  This table shares a one to one relationship with active storage.
 
 ## Provide your database schema design
-#
+
     ActiveRecord::Schema.define(version: 2022_07_21_064811) do
 
 These are extensions that must be enabled in order to support this database enable_extension "plpgsql"
@@ -272,7 +271,7 @@ These are extensions that must be enabled in order to support this database enab
 
 
 ## Describe the way tasks are allocated and tracked in your project 
-#
+
 ![trello](app/assets/images/trello.PNG)
 
 During the development of my application I utilized Trello to track my tasks and workflow. 
