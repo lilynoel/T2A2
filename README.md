@@ -26,12 +26,16 @@ Floof is an adoption app specific to canines that is geared towards those who ar
 
 - <b><u>Functionality / features</u> |</b> As a two sided marketplace application, Floof's functionality supports both "buys & sellers" or specific to Floof: adopters and listing authors. The functionality varies depending on whether or not the user is logged in:
 <br>
+
   - <u><i>Guest / visitor</u>: </i>
+  
       - Navigate between home page and view other users listings only. 
       - If guest / visitor tries to post a new listing, they will be redirected to the login page. Listings are protected from guests / visitors. No action can be taken, only viewing and registering / logging in.
+  
 <br>
 
   - <u><i>Logged in user</u>:</i>
+  
     - Register with floof / create a profile (multiple users supported)
     - Login / logout 
     - Post, edit, view & delete own listings
@@ -43,25 +47,27 @@ Floof is an adoption app specific to canines that is geared towards those who ar
     - View a list of listings user has adopted.
     - Users can enjoy peace of mind knowing that their listings cannot be edited or deleted by other users. 
     - Listings support image upload feature. 
+  
 <br>
 
 - Sitemap
+<br>
 
-![screenshots](app/assets/images/sitemap.PNG)
+![sitemap](app/assets/images/sitemap.png)
 
 <br>
 
 - Screenshots
 <br>
 
-![screenshots](app/assets/images/home.PNG)
-![screenshots](app/assets/images/listings.PNG)
-![screenshots](app/assets/images/adopted.PNG)
-![screenshots](app/assets/images/adoptions.PNG)
-![screenshots](app/assets/images/listing.PNG)
-![screenshots](app/assets/images/your-listing.PNG)
-![screenshots](app/assets/images/adopted-floof.PNG)
-![screenshots](app/assets/images/success.PNG)
+![screenshot](app/assets/images/home.PNG)
+![screenshot](app/assets/images/listings.PNG)
+![screenshot](app/assets/images/adopted.PNG)
+![screenshot](app/assets/images/adoptions.PNG)
+![screenshot](app/assets/images/listing.PNG)
+![screenshot](app/assets/images/your-listing.PNG)
+![screenshot](app/assets/images/adopted-floof.PNG)
+![screenshot](app/assets/images/success.PNG)
 
 
 <br>
@@ -79,31 +85,32 @@ In the context of the Floof application, buyers will be referred to as adopters,
  - <u><i>Guest / visitor</u>:</i>
     - As a guest or visitor to the Floof web application, I'd like to have the option of navigating the site seamlessly, have an understanding of what the application does / it's purpose and experience some of the app's features such as viewing a listing.
     <br>
+
     - The option to sign up / register is important as a guest or visitor to the application. If I enjoy my preliminary experience of the application, and it aligns with my needs I will then expect the capability of registering to the application's services. 
     <br>
   
- - <u><i>Listing author</u>: </i>
-   - As a registered user, I'd like to be able to view other users listings.
-   - As a registered user, its important that I can post, edit, delete and view my listings and that no one else can access those features on my listings beyond viewing and adopting.
-   - As a registered user, it would be nice to have the option to view all of my successfully adopted listings in one place.
-   - As a registered user, it would be very helpful to view a list of dogs I have adopted. 
-   - As a registered user its very important that I can login and logout of this application. 
+   - <u><i>Listing author</u>: </i>
+     - As a registered user, I'd like to be able to view other users listings.
+     - As a registered user, its important that I can post, edit, delete and view my listings and that no one else can access those features on my listings beyond viewing and adopting.
+     - As a registered user, it would be nice to have the option to view all of my successfully adopted listings in one place.
+     - As a registered user, it would be very helpful to view a list of dogs I have adopted. 
+     - As a registered user its very important that I can login and logout of this application. 
 <br>
 
- - <u><i>Adopter</u>: </i>
-   - As a registered user, in addition to the features listed above, i'd like to have access to adopting dogs via the listings page and that those listings are automatically updated to reflect the dog has been adopted. 
+   - <u><i>Adopter</u>: </i>
+     - As a registered user, in addition to the features listed above, i'd like to have access to adopting dogs via the listings page and that those listings are automatically updated to reflect the dog has been adopted. 
 
 
 ## Wireframes 
 
 
-![screenshots](app/assets/images/wireone.PNG)
-![screenshots](app/assets/images/wiretwo.PNG)
-![screenshots](app/assets/images/wirethree.PNG)
+![wireframe](app/assets/images/wireone.png)
+![wireframe](app/assets/images/wiretwo.png)
+![wireframe](app/assets/images/wirethree.png)
 
 ## ERD
 
-![screenshots](app/assets/images/erd.PNG)
+![erd](app/assets/images/erd.PNG)
 
 ## Explain the different high-level components (abstractions) in your app
 
@@ -116,34 +123,23 @@ In the context of the Floof application, buyers will be referred to as adopters,
 
 ## Detail any third party services that your app will use
 
-- <u>Github</u>:
+- <b> Github |</b> I used GitHub to manage source control for this application.
+ <br>
 
-    I used GitHub to manage source control for this application.
-    <br>
+- <b> Heroku |</b> Floof was deployed using Heroku.
+ <br>
 
-- <u>Heroku</u>:
-  
-    Floof was deployed using Heroku.
-    <br>
+- <b> PostGresQL |</b> Database.
+<br>
 
-- <u>PostGresQL</u>:
-    
-    Database.
-    <br>
+- <b> Rspec |</b> Testing.
+<br>
 
-- <u>Rspec</u>:
-    
-    Testing.
-    <br>
+- <b> Devise |</b> User authentication.
+<br>
 
-- <u>Devise</u>:
-  
-  User authentication.
-  <br>
-
-- <u>Wix / ImgBB</u>
-    These applications were implemented for cloud based image hosting.
-    <br>
+- <b> Wix / ImgBB |</b> These applications were implemented for cloud based image hosting.
+<br>
 
 ## Describe your projects models in terms of the relationships (active record associations) they have with each other
 
@@ -282,5 +278,10 @@ I labelled the tasks based on priority, and any issues I was having were labelle
 As tasks were completed, they were moved to different cards on the board for example, an incomplete task might be in 'To-Do' or "Working On It' per the screenshot provided. Once a task was finished, it was then moved to "Done". This helped me to keep track of which tasks or errors were outstanding and the status. This ensured a seamless workflow and that all tasks were completed.
 
 #
+
+<h5 align="center">
+
 ![copyright](app/assets/images/copyright.PNG)
-<center><b>Floof.</b> © 2022 Lily Noël.</center>
+Floof. © 2022 Lily Noël.
+
+</h5>
