@@ -2,7 +2,12 @@
 
 
 <!-- app logo - remove src/T2A2 from path when moving readme contents across to rails app for deploy -->
-![logo](app/assets/images/pretty-floof.PNG) 
+
+<h5 align="center">
+
+<img src="https://i.ibb.co/Gsyr05p/logo-1.png" width="300" title="floof">
+
+</h5>
 
 ### Application Name
 - Floof.
@@ -28,41 +33,37 @@ Floof is an adoption app specific to canines that is geared towards those who ar
 <br>
 
   - <u><i>Guest / visitor</u>: </i>
-  
-      - Navigate between home page and view other users listings only. 
-      - If guest / visitor tries to post a new listing, they will be redirected to the login page. Listings are protected from guests / visitors. No action can be taken, only viewing and registering / logging in.
-  <br>
+
+     - Navigate between home page and view other users listings only. 
+     - If guest / visitor tries to post a new listing, they will be redirected to the login page. Listings are protected from guests / visitors. No action can be taken, only viewing and registering / logging in.
+<br>
 
   - <u><i>Logged in user</u>:</i>
-  
-    - Register with floof / create a profile (multiple users supported)
-    - Login / logout 
-    - Post, edit, view & delete own listings
-    - View other users listings
-    - "Adopt a dog" from another user's listing
-    - Listing will automatically update once posted dog has been adopted
-    - View a list of all listings
-    - View a list of own <i>inactive</i> listings that have been adopted
-    - View a list of listings user has adopted.
-    - Users can enjoy peace of mind knowing that their listings cannot be edited or deleted by other users. 
-    - Listings support image upload feature. 
+
+      - Register with floof / create a profile (multiple users supported)
+      - Login / logout 
+      - Post, edit, view & delete own listings
+      - View other users listings
+      - "Adopt a dog" from another user's listing
+      - Listing will automatically update once posted dog has been adopted
+      - View a list of all listings
+      - View a list of own <i>inactive</i> listings that have been adopted
+      - View a list of listings user has adopted.
+      - Users can enjoy peace of mind knowing that their listings cannot be edited or deleted by other users. 
+      - Listings support image upload feature. 
   
 <br>
 
 - Sitemap
-<br>
 
 ![sitemap](app/assets/images/sitemap.png)
 
-<br>
 
 - Screenshots
-<br>
 
 ![screenshot](app/assets/images/one.png)
 ![screenshot](app/assets/images/two.png)
 
-<br>
 
 - <u><b>Target audience</u> |</b> Floof was created for those wishing to adopt a dog in need of a home. 
 <br>
@@ -74,9 +75,9 @@ Floof is an adoption app specific to canines that is geared towards those who ar
 
 - In the context of the Floof application, buyers will be referred to as adopters, and sellers will be known as listing author. The term users may be used to refer to either of the two. 
   <br>
+
    - <u><i>Guest / visitor</u>:</i>
       - As a guest or visitor to the Floof web application, I'd like to have the option of navigating the site seamlessly, have an understanding of what the application does / it's purpose and experience some of the app's features such as viewing a listing.
-    <br>
 
       - The option to sign up / register is important as a guest or visitor to the application. If I enjoy my preliminary experience of the application, and it aligns with my needs I will then expect the capability of registering to the application's services. 
     <br>
@@ -87,22 +88,24 @@ Floof is an adoption app specific to canines that is geared towards those who ar
      - As a registered user, it would be nice to have the option to view all of my successfully adopted listings in one place.
      - As a registered user, it would be very helpful to view a list of dogs I have adopted. 
      - As a registered user its very important that I can login and logout of this application. 
-<br>
+    <br>
 
    - <u><i>Adopter</u>: </i>
      - As a registered user, in addition to the features listed above, i'd like to have access to adopting dogs via the listings page and that those listings are automatically updated to reflect the dog has been adopted. 
 
+<br>
 
 ## Wireframes 
-
 
 ![wireframe](app/assets/images/wireone.png)
 ![wireframe](app/assets/images/wiretwo.png)
 ![wireframe](app/assets/images/wirethree.png)
 
+
 ## ERD
 
-![erd](app/assets/images/erd.PNG)
+![erd](app/assets/images/erd.png)
+
 
 ## Explain the different high-level components (abstractions) in your app
 
@@ -115,22 +118,17 @@ Floof is an adoption app specific to canines that is geared towards those who ar
 
 ## Detail any third party services that your app will use
 
-- <b> Github |</b> I used GitHub to manage source control for this application.
- <br>
+- <b> Github |</b> Source control.
 
-- <b> Heroku |</b> Floof was deployed using Heroku.
- <br>
+- <b> Heroku |</b> Deployment.
 
 - <b> PostGresQL |</b> Database.
-<br>
 
 - <b> Rspec |</b> Testing.
-<br>
 
 - <b> Devise |</b> User authentication.
-<br>
 
-- <b> Wix & ImgBB |</b> These applications were implemented for cloud based image hosting.
+- <b> Wix & ImgBB |</b> Cloud based image hosting.
 <br>
 
 ## Describe your projects models in terms of the relationships (active record associations) they have with each other
@@ -162,6 +160,7 @@ A<b><u>Adoption</u> |</b> This table is shown to have a one to one relationship 
 <b><u>Active storage</u> |</b>  The active storage table has a one to one relationship with the listings, users and Blobs table. The only foreign key in active storage is record id.
 
 <b><u>Active storage blobs</u> |</b>  This table shares a one to one relationship with active storage.
+<br>
 
 ## Provide your database schema design
 
@@ -258,14 +257,13 @@ These are extensions that must be enabled in order to support this database enab
     add_foreign_key "orders", "users", column: "seller_id"
     end
 
+<br>
 
 ## Describe the way tasks are allocated and tracked in your project 
 
 ![trello](app/assets/images/trello.PNG)
 
-During the development of my application I utilized Trello to track my tasks and workflow. 
-
-I labelled the tasks based on priority, and any issues I was having were labelled based on progress. 
+During the development of my application I utilized Trello to track my tasks and workflow. I labelled the tasks based on priority, and any issues I was having were labelled based on progress. 
 
 As tasks were completed, they were moved to different cards on the board for example, an incomplete task might be in 'To-Do' or "Working On It' per the screenshot provided. Once a task was finished, it was then moved to "Done". This helped me to keep track of which tasks or errors were outstanding and the status. This ensured a seamless workflow and that all tasks were completed.
 
