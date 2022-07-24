@@ -1,5 +1,4 @@
 
-<span style="color: Grey">
 <h1 align="center"> 
 
 Lily Noël • T2A2 Marketplace Project 
@@ -293,7 +292,7 @@ During the development of my application I utilized Trello to track my tasks and
 As tasks were completed, they were moved to different cards on the board for example, an incomplete task might be in 'To-Do' or "Working On It' per the screenshot provided. Once a task was finished, it was then moved to "Done". This helped me to keep track of which tasks or errors were outstanding and the status. This ensured a seamless workflow and that all tasks were completed.
 
 #
-</span>
+
 <h5 align="center">
 
 <img src="https://i.ibb.co/0CGxz6b/floof-copyright.png" width="100" title="copyright">
