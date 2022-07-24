@@ -31,8 +31,7 @@ Floof is an adoption app specific to canines that is geared towards those who ar
   
       - Navigate between home page and view other users listings only. 
       - If guest / visitor tries to post a new listing, they will be redirected to the login page. Listings are protected from guests / visitors. No action can be taken, only viewing and registering / logging in.
-  
-<br>
+  <br>
 
   - <u><i>Logged in user</u>:</i>
   
@@ -60,15 +59,8 @@ Floof is an adoption app specific to canines that is geared towards those who ar
 - Screenshots
 <br>
 
-![screenshot](app/assets/images/home.PNG)
-![screenshot](app/assets/images/listings.PNG)
-![screenshot](app/assets/images/adopted.PNG)
-![screenshot](app/assets/images/adoptions.PNG)
-![screenshot](app/assets/images/listing.PNG)
-![screenshot](app/assets/images/your-listing.PNG)
-![screenshot](app/assets/images/adopted-floof.PNG)
-![screenshot](app/assets/images/success.PNG)
-
+![screenshot](app/assets/images/one.png)
+![screenshot](app/assets/images/two.png)
 
 <br>
 
@@ -80,13 +72,13 @@ Floof is an adoption app specific to canines that is geared towards those who ar
 
 ## User stories
 
-In the context of the Floof application, buyers will be referred to as adopters, and sellers will be known as listing author. The term users may be used to refer to either of the two. 
-
- - <u><i>Guest / visitor</u>:</i>
-    - As a guest or visitor to the Floof web application, I'd like to have the option of navigating the site seamlessly, have an understanding of what the application does / it's purpose and experience some of the app's features such as viewing a listing.
+- In the context of the Floof application, buyers will be referred to as adopters, and sellers will be known as listing author. The term users may be used to refer to either of the two. 
+  <br>
+   - <u><i>Guest / visitor</u>:</i>
+      - As a guest or visitor to the Floof web application, I'd like to have the option of navigating the site seamlessly, have an understanding of what the application does / it's purpose and experience some of the app's features such as viewing a listing.
     <br>
 
-    - The option to sign up / register is important as a guest or visitor to the application. If I enjoy my preliminary experience of the application, and it aligns with my needs I will then expect the capability of registering to the application's services. 
+      - The option to sign up / register is important as a guest or visitor to the application. If I enjoy my preliminary experience of the application, and it aligns with my needs I will then expect the capability of registering to the application's services. 
     <br>
   
    - <u><i>Listing author</u>: </i>
@@ -138,7 +130,7 @@ In the context of the Floof application, buyers will be referred to as adopters,
 - <b> Devise |</b> User authentication.
 <br>
 
-- <b> Wix / ImgBB |</b> These applications were implemented for cloud based image hosting.
+- <b> Wix & ImgBB |</b> These applications were implemented for cloud based image hosting.
 <br>
 
 ## Describe your projects models in terms of the relationships (active record associations) they have with each other
@@ -279,9 +271,13 @@ As tasks were completed, they were moved to different cards on the board for exa
 
 #
 
+
+
+
 <h5 align="center">
 
-![copyright](app/assets/images/copyright.PNG)
+<img src="https://i.ibb.co/0CGxz6b/floof-copyright.png" width="100" title="copyright">
+
 Floof. © 2022 Lily Noël.
 
 </h5>
